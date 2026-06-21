@@ -4,7 +4,7 @@ This is a small modular Perl monitor intended to run as a `systemd` daemon. It d
 
 ## Install
 
-Clone the repository on the target server:
+Clone the repository on the target device:
 
 ```sh
 git clone https://github.com/Schwarzemann/microSQLog.git
