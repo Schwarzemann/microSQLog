@@ -8,14 +8,14 @@ Clone the repository on the target server:
 
 ```sh
 git clone https://github.com/Schwarzemann/microSQLog.git
-cd microsqlog
+cd microSQLog
 ```
 
 Install the service files:
 
 ```sh
 sudo install -d /usr/local/lib/microsqlog /usr/local/sbin /etc/microsqlog /etc/systemd/system
-sudo cp -r lib/ /usr/local/lib/microsqlog/
+sudo cp -r lib/MicroSQLog /usr/local/lib/microsqlog/
 sudo cp bin/microsqlog.pl /usr/local/sbin/microsqlog.pl
 sudo cp etc/microsqlog.conf /etc/microsqlog/microsqlog.conf
 sudo cp systemd/microsqlog.service /etc/systemd/system/microsqlog.service
