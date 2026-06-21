@@ -1,0 +1,18 @@
+[Unit]
+Description=microSQLog MySQL/MariaDB monitor
+After=network-online.target mysql.service mariadb.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/local/sbin/microsqlog.pl
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/etc/microsqlog
+
+[Install]
+WantedBy=multi-user.target
